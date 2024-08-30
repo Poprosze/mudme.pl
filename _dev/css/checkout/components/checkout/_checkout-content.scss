@@ -1,0 +1,106 @@
+
+.checkout-step {
+  margin-bottom: 20px;
+
+
+  &__header {
+    border-bottom: 0;
+  }
+
+
+
+  .not-allowed {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .content,
+  .done,
+  .step-edit {
+    display: none;
+  }
+
+  &.-unreachable {
+    .step-title {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    border: 1px dashed var(--gray-border);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius)
+  }
+
+  &.-current {
+    .step-title {
+      cursor: default;
+    }
+
+    .content {
+      display: block;
+    }
+  }
+
+  &.-current.-reachable.-complete {
+    .done,
+    .step-edit {
+      display: none;
+    }
+
+    .step-number {
+      display: inline-block;
+    }
+
+    .content {
+      display: block;
+
+    }
+  }
+
+  &.-reachable.-complete {
+    .done {
+      display: inline-block;
+    }
+
+    .content {
+      display: none;
+    }
+  }
+
+  .step-number {
+    display: inline-block;
+  }
+  .step-title {
+    font-weight: 400;
+    font-size: 1.6875rem;
+    i {
+      position: absolute;
+    }
+  }
+}
+
+.js-payment-binary {
+  display: none;
+
+  .accept-cgv {
+    display: none;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      content: "";
+    }
+
+    .accept-cgv {
+      display: block;
+    }
+  }
+}

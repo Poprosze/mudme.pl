@@ -1,0 +1,17 @@
+ 
+
+{shop_url}
+
+Witaj {firstname} {lastname},
+
+Wiadomość od #kaloszepoprosze
+
+Otrzymałeś nową wiadomość od #kaloszepoprosze dotyczącą zamówienia {order_name}.
+
+Wiadomość:
+
+{message}
+
+[#kaloszepoprosze]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

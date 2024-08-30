@@ -1,0 +1,66 @@
+
+.font-reset {
+  /* stylelint-disable */
+  font-size: inherit !important;
+  /* stylelint-enable */
+}
+
+.line-height-reset {
+  /* stylelint-disable */
+  line-height: inherit !important;
+  /* stylelint-enable */
+}
+
+.font-sm {
+  @include font-size($font-size-sm);
+}
+
+.font-lg {
+  @include font-size($font-size-lg);
+}
+
+.font-xs {
+  @include font-size($font-size-xs);
+}
+
+.font-base {
+  @include font-size($font-size-base);
+}
+
+
+.brand-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  &--left {
+    align-items: flex-start;
+  }
+  h1, h2, h3, h4, span {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 44px;
+    margin-bottom: 8px;
+  }
+  svg {
+    fill: var(--text-color);
+    max-height: 20px;
+    max-width: 125px;
+  }
+}
+
+svg.single-arrow {
+  fill: var(--text-color);
+  max-height: 20px;
+  max-width: 125px;
+}
+
+.return-arrows {
+  max-width: 1rem;
+  max-height: 10px;
+  margin-top: -2px;
+  margin-right: 3px;
+  transform: scaleX(-1);
+}

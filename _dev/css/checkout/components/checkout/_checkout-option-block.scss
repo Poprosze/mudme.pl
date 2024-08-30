@@ -1,0 +1,16 @@
+
+.checkout-option-block {
+  position: relative;
+
+  > input {
+    position: absolute;
+    left: -99999em;
+  }
+
+  &.selected, &:hover {
+    .card {
+      background-color: var(--light-gray-bg);
+    }
+  }
+
+}

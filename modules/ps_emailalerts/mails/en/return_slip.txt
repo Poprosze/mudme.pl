@@ -1,0 +1,36 @@
+
+[{shop_url}] 
+
+Hi, 
+
+You have received a new return request for #kaloszepoprosze.
+
+Return details 
+
+ORDER: {order_name} Placed on {date}
+
+CUSTOMER: {firstname} {lastname}, ({email}) 
+
+REFERENCE
+
+PRODUCT
+
+QUANTITY
+
+{items} 
+
+Delivery address
+
+{delivery_block_html} 		 
+
+Billing address
+
+{invoice_block_html} 
+
+Customer message: 
+
+{message} 
+
+#kaloszepoprosze [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+

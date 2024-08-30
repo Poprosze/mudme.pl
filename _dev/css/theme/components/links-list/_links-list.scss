@@ -1,0 +1,21 @@
+
+.links-list {
+  margin: 0;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+
+
+  &__elem {
+    &:not(:last-child) {
+      margin: 0 0 map-get($spacers, 2);
+    }
+  }
+
+  &__link {
+    color: var(--text-color);
+    @include hover-focus() {
+      color: var(--text-darker-color);
+    }
+  }
+}

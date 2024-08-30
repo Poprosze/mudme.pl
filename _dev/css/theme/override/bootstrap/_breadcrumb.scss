@@ -1,0 +1,52 @@
+
+.breadcrumb {
+  border-radius: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: var(--light-gray-bg);
+  font-size: 13px;
+  @media (min-width: 1201px){
+    padding: 6px 4vw;
+  }
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    flex-wrap: nowrap;
+    padding-right: 0;
+    padding-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .breadcrumb-item {
+      &:first-child {
+        padding-left: $breadcrumb-padding-x;
+      }
+
+      &:last-child {
+        padding-right: $breadcrumb-padding-x;
+      }
+    }
+  }
+  a {
+    color: var(--text-color);
+  }
+  .active {
+    color: var(--text-darker-color);
+  }
+
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  float: none;
+  content: "\00BB";
+  font-size: 18px;
+  position: relative;
+  line-height: 16px;
+}

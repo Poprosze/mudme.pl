@@ -1,0 +1,158 @@
+
+.product-miniature {
+  $self: &;
+  border-radius: var(--border-radius);
+  position: relative;
+  background-color: #fff;
+  &__quick-view {
+    position: absolute;
+    right: map-get($spacers, 2);
+    bottom: map-get($spacers, 2);
+    z-index: 2;
+    width: 1.7em;
+    height: 1.7em;
+    padding: 0;
+    line-height: 1.7em;
+    border: 0;
+    @include font-size(20px);
+  }
+
+  &__quick-view-icon {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &__pricing {
+    margin: 0 0 map-get($spacers, 4);
+  }
+
+  &__title {
+    $line-height: 1.2;
+    overflow: hidden;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-darker-color);
+    line-height: 1.5rem;
+
+  }
+
+  &--smaller {
+    .price,
+    #{$self}__title {
+      @include font-size(15px);
+    }
+
+    #{$self}__pricing {
+      margin: 0;
+    }
+
+  }
+  &__hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    z-index: 3;
+    transition: .3s;
+    pointer-events: none;
+  }
+  &__actions {
+    pointer-events: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top:calc(100% - 25px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    padding: 0 10px 15px;
+    transition: .3s;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 22px;
+      position: absolute;
+      display: block;
+      top: -22px;
+      left: 0;
+      background-color: #fff;
+    }
+  }
+  &__thumb {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    .product-miniature__actions {
+      opacity: 1;
+      visibility: visible;
+    }
+    .product-miniature__hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__variants {
+    pointer-events: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(82px, 85px));
+    grid-gap: 0 8px;
+    justify-content: center;
+    li {
+      position: relative;
+      margin-bottom: -10px;
+      span {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 700;
+        color: var(--gray-border);
+        line-height: 0.8125rem;
+        //padding: 10px 10px;
+        display: block;
+        max-width: 82px;
+        transition: .3s;
+      }
+      svg {
+        max-width: 100%;
+        max-height: 85px;
+        fill: var(--gray-border);
+      }
+      span {
+        color: var(--text-darker-color);
+      }
+      &:hover {
+        svg {
+          fill: var(--secondary-color);
+        }
+        span {
+          color: var(--text-darker-color);
+        }
+      }
+      &.not-available {
+        svg {
+          color: var(--gray-border);
+        }
+        span {
+          color: var(--gray-border);
+        }
+      }
+    }
+
+  }
+}

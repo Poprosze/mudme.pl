@@ -1,0 +1,27 @@
+
+.cart-products {
+  display: flex;
+  padding: 0 20px 20px;
+  &:not(:first-child) {
+    padding-top: map-get($spacers, 3);
+    border-top: 1px dashed var(--gray-border);
+  }
+  &:last-of-type {
+    border-bottom: 1px dashed var(--gray-border);
+  }
+
+  &__thumb {
+    @include custom-col(rem-calc(80px));
+    padding-right: map-get($spacers, 2);
+  }
+
+  &__desc {
+    flex: 1 1;
+    padding-right: map-get($spacers, 2);
+  }
+
+  &__remove {
+    flex: 0 0;
+  }
+
+}

@@ -1,0 +1,106 @@
+
+.product-line-grid {
+  align-items: center;
+
+  &:not(:last-child) {
+    padding-bottom: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 3);
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -#{map-get($spacers, 2)};
+    @include media-breakpoint-up(md) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__block {
+    padding: 0 rem-calc(10px);
+
+    &--image {
+      align-self: flex-start;
+      @include custom-col(80px);
+      order: -3;
+      @include media-breakpoint-up(md) {
+        align-self: center;
+        @include custom-col(120px);
+      }
+    }
+
+    &--prod {
+      order: -2;
+      @include custom-col(calc(100% - #{rem-calc(80px)} - #{rem-calc(50px)}));
+      @include media-breakpoint-up(md) {
+        flex: 1 1 auto;
+        max-width: inherit;
+      }
+    }
+
+    &--qty {
+      @include make-col(4);
+      margin: rem-calc(15px) 0 0;
+      > div {
+        display: flex;
+        justify-content: center;
+      }
+      @include media-breakpoint-up(md) {
+        margin: 0;
+        @include custom-col(rem-calc(100px));
+        text-align: center;
+      }
+    }
+    &--price {
+      @include make-col(4);
+      margin: rem-calc(15px) 0 0;
+      @include media-breakpoint-up(md) {
+        margin: 0;
+        @include custom-col(rem-calc(100px));
+        text-align: center;
+      }
+    }
+
+    &--total {
+      @include make-col(4);
+      margin: rem-calc(15px) 0 0;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        margin: 0;
+        text-align: center;
+        @include custom-col(rem-calc(70px));
+      }
+      @include media-breakpoint-up(xl) {
+        @include custom-col(rem-calc(100px));
+
+      }
+    }
+
+    &--delete {
+      @include custom-col(rem-calc(30px));
+      text-align: center;
+      @include media-breakpoint-down(sm) {
+        align-self: flex-start;
+        order: -1;
+        padding-top: rem-calc(5px);
+      }
+      svg {
+        margin-top: -3px;
+        fill: var(--text-color);
+      }
+      &:hover {
+        svg {
+          fill: var(--secondary-color);
+        }
+      }
+    }
+  }
+  &--header {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-bottom: 1px dashed var(--gray-border) !important;
+    padding: 0 20px 10px !important;
+  }
+}

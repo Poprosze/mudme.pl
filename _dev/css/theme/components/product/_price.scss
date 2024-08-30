@@ -1,0 +1,17 @@
+.price {
+  color: var(--text-darker-color);
+  &--regular {
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: line-through;
+    font-size: 1.125rem;
+  }
+
+  &--lg {
+    font-size: 1.5rem;
+  }
+
+  &--sm {
+    @include font-size($font-size-base);
+  }
+}
