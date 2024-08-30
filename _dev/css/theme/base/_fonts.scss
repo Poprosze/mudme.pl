@@ -60,20 +60,18 @@
 }
 
 @font-face {
-  font-family: 'Harmonia Sans Pro Cyr';
-  src: local('HarmoniaSansProCyr-Regular'),
-  url('./fonts/HarmoniaSansProCyr-Regular.woff2') format('woff2'),
-  url('./fonts/HarmoniaSansProCyr-Regular.woff') format('woff');
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'),
+  url('./fonts/Poppins-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Harmonia Sans Pro Cyr';
-  src: local('HarmoniaSansProCyr-Bold'),
-  url('./fonts/HarmoniaSansProCyr-Bold.woff2') format('woff2'),
-  url('./fonts/HarmoniaSansProCyr-Bold.woff') format('woff');
+  font-family: 'Poppins';
+  src: local('Poppins-Bold'),
+  url('./fonts/Poppins-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
