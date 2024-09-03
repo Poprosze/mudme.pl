@@ -22,12 +22,12 @@
 	line-height: 36px;
 
 	span {
-	  color: var(--gray-border);
+	  color: var(--secondary-color);
 	}
   }
 
   dd {
-	color: var(--gray-border);
+	color: var(--secondary-color);
   }
 
   dt {
@@ -145,7 +145,7 @@
 	padding: 1.5rem;
 	margin-bottom: 20px;
 	align-items: center;
-	color: var(--gray-border);
+	color: var(--text-color);
 
 	&:hover {
 	  text-decoration: none;

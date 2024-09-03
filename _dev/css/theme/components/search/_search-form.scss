@@ -20,6 +20,7 @@
     border: none;
     border-bottom: 1px solid var(--light-border);
     color: var(--text-color);
+    background: var(--light-bg);
     &::placeholder {
       color: var(--text-color);
     }

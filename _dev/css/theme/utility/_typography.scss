@@ -38,21 +38,21 @@
     align-items: flex-start;
   }
   h1, h2, h3, h4, span {
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 2.25rem;
     line-height: 44px;
     margin-bottom: 8px;
   }
   svg {
-    fill: var(--text-color);
+    fill: var(--secondary-color);
     max-height: 20px;
     max-width: 125px;
   }
 }
 
 svg.single-arrow {
-  fill: var(--text-color);
+  fill: var(--secondary-color);
   max-height: 20px;
   max-width: 125px;
 }
