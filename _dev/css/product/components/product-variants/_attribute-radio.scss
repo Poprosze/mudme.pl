@@ -7,10 +7,17 @@
     margin: 0;
     cursor: pointer;
     margin-bottom: -10px;
+
+    svg {
+      fill: var(--light-gray-bg);
+      color: var(--light-gray-bg);
+    }
+
     &:hover {
       svg {
         fill: var(--secondary-color);
-        color: var(--secondary-color);}
+        color: var(--secondary-color);
+      }
     }
   }
 
