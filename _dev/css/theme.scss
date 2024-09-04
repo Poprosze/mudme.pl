@@ -178,7 +178,7 @@
 .btn.btn-secondary {
   border: 1px solid var(--gray-border);
   border-radius: 50px;
-  background-color: #fff;
+  background-color: transparent;
   padding: 0.8rem 1rem 0.6rem;
   line-height: 1.6;
   min-width: 220px;
@@ -333,7 +333,7 @@
 	  border-bottom-left-radius: var(--border-radius);
 	  border-bottom-right-radius: var(--border-radius);
 	  border-top: 1px dashed var(--gray-border);
-	  background-color: #fff;
+	  background-color: var(--light-bg);
 	  padding: 20px;
 
 	  .btn-primary {
@@ -439,7 +439,7 @@
 	  margin-top: -20px;
 
 	  .nav-link.active {
-		background-color: #fff;
+		background-color: var(--light-bg);
 		color: var(--text-darker-color);
 		font-weight: 700;
 		border-radius: 0;
@@ -615,7 +615,7 @@ textarea.form-control {
 
   .brand-arrow {
 	margin-left: -16px;
-	fill: var(--text-color);
+	fill: var(--secondary-color);
   }
 
   h4 {
@@ -640,6 +640,7 @@ textarea.form-control {
 	  span {
 		font-size: 1.875rem;
 		line-height: 20px;
+		color: var(--secondary-color);
 
 	  }
 	}

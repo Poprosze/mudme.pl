@@ -3,7 +3,7 @@
   $self: &;
   border-radius: var(--border-radius);
   position: relative;
-  background-color: #fff;
+  background-color: var(--light-bg);
   &__quick-view {
     position: absolute;
     right: map-get($spacers, 2);
@@ -71,7 +71,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     opacity: 0;
     visibility: hidden;
-    background-color: #fff;
+    background-color: var(--light-bg);
     border-bottom-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     padding: 0 10px 15px;
@@ -84,7 +84,7 @@
       display: block;
       top: -22px;
       left: 0;
-      background-color: #fff;
+      background-color: var(--light-bg);;
     }
   }
   &__thumb {
