@@ -12,9 +12,6 @@
                 {l s='Instagram' d='Modules.Csoftinstagram.Front'}
             </h2>
             <span>{l s='@kaloszepoprosze' d='Modules.Csoftinstagram.Front'}</span>
-            <svg width="182" height="20">
-                <use xlink:href="#svg-icon-arrow"></use>
-            </svg>
         </div>
 
 

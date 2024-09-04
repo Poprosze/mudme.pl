@@ -64,9 +64,6 @@
                 {block name='page_header_container'}
                     {block name='page_header'}
                         <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
-                        <svg class="single-arrow">
-                            <use xlink:href="#svg-icon-arrow"></use>
-                        </svg>
                     {/block}
                 {/block}
 
@@ -223,9 +220,6 @@
                 {block name='product_description'}
                     <div class="brand-heading brand-heading--left  mb-4">
                         <h3 class="h3">{l s='Description' d='Shop.Theme.Catalog'}</h3>
-                        <svg>
-                            <use xlink:href="#svg-icon-arrow"></use>
-                        </svg>
                     </div>
                     <div class="product-description cms-content">{$product.description nofilter}</div>
                 {/block}
@@ -236,18 +230,12 @@
                     {block name='product_features'}
                         <div class="brand-heading brand-heading--left mb-4">
                             <h3 class="h3">{l s='Features' d='Shop.Theme.Catalog'}</h3>
-                            <svg>
-                                <use xlink:href="#svg-icon-arrow"></use>
-                            </svg>
                         </div>
                         {if $product.grouped_features}
                             <section class="product-features">
                                 <ul>
                                     {foreach from=$product.grouped_features item=feature}
-                                        <li>
-                                            <svg width="12" height="10">
-                                                <use xlink:href="#svg-icon-arrows"></use>
-                                            </svg>{$feature.name}:
+                                        <li>{$feature.name}:
                                             <span> {$feature.value|escape:'htmlall'|nl2br nofilter}</span>
                                         </li>
                                     {/foreach}
@@ -262,7 +250,7 @@
                             <section class="product-features my-3">
                                 <dl class="row">
                                     {foreach from=$product.specific_references item=reference key=key}
-                                        <dt class="col-4 pr-3 {if !$reference@last}pb-2 mb-2 border-bottom{/if}"><svg width="16" height="13"><use xlink:href="#svg-icon-arrows"></use></svg>{$key}</dt>
+                                        <dt class="col-4 pr-3 {if !$reference@last}pb-2 mb-2 border-bottom{/if}">{$key}</dt>
                                         <dd class="col-8 {if !$reference@last}pb-2 mb-2 border-bottom{/if}">{$reference}</dd>
                                     {/foreach}
                                 </dl>

@@ -2,10 +2,7 @@
     <div class="jashwellington-home__content d-flex flex-column align-items-center">
         <h3 class="jashwellington-home__header mb-1 mt-2">{l s='Customize yours' d='Modules.Jashwellington.Banner'}
         </h3>
-        <img src="{$urls.theme_assets}img/Kalosze.png" alt="{l s='Customize yours wellingtons' d='Modules.Jashwellington.Banner'}" width="140" height="55">
-        <svg width="170" height="20" class="mb-3 mt-3">
-            <use xlink:href="#svg-icon-arrow"></use>
-        </svg>
+        <img src="{$urls.theme_assets}img/Kalosze.png" class="mb-3" alt="{l s='Customize yours wellingtons' d='Modules.Jashwellington.Banner'}" width="140" height="55">
         <a class="jashwellington-home__link btn btn-secondary" href="{$link->getModuleLink('jashwellington', 'configurator')}">{l s='Go to creator' d='Modules.Jashwellington.Banner'} </a>
     </div>
 

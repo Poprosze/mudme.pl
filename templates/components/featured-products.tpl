@@ -9,9 +9,6 @@
                             <h2>
                                 {$smarty.block.child}
                             </h2>
-                            <svg>
-                                <use xlink:href="#svg-icon-arrow"></use>
-                            </svg>
                         </div>
                     {/block}
                 </div>

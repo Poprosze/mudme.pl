@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <div class="brand-heading mb-3 mt-4">
         <h3 class="h3">{l s='Configure your set' d='Modules.Jashwellington.Front'}</h3>
-        <svg>
-            <use xlink:href="#svg-icon-arrow"></use>
-        </svg>
     </div>
     <p class="text-center mb-6">
         {l s='Choose the boosts and some warmers' d='Modules.Jashwellington.Front'}
@@ -116,7 +113,7 @@
                 <div class="pb-5">
                     <div class="row flex-column align-items-center">
                         <a href="{$urls.pages.cart}" class="btn btn-primary ">{l s='go to cart' d='Modules.Jashwellington.Front'}</a>
-                        <a href="{$urls.base_url}" class="pt-3"><svg class="return-arrows"><use xlink:href="#svg-icon-arrows"></use></svg>{l s='return to buy' d='Modules.Jashwellington.Front'}</a>
+                        <a href="{$urls.base_url}" class="pt-3">{l s='return to buy' d='Modules.Jashwellington.Front'}</a>
                     </div>
                     
                 </div>
@@ -124,10 +121,6 @@
         </div>
     </div>
     <div class="configurator__footer">
-        <a class="" href="{$urls.page.base}">
-            <svg class="return-arrows">
-                <use xlink:href="#svg-icon-arrows">
-                </use>
-            </svg>{l s='Back to shop' d='Modules.Jashwellington.Front'}</a>
+        <a class="" href="{$urls.page.base}">{l s='Back to shop' d='Modules.Jashwellington.Front'}</a>
     </div>
 {/block}

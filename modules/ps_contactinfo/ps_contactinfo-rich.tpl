@@ -25,7 +25,6 @@
 
 <div class="contact-rich mb-4 card">
 <div class="contact-rich__header">
-  <svg class="brand-arrow" width="155" height="20"><use xlink:href="#svg-icon-arrow"></use></svg>
   <h4>{l s='Shoe factory' d='Shop.Theme.Global'}</h4>
   <span>{$contact_infos.address.address1}</span>
   <span>{$contact_infos.address.postcode} {$contact_infos.address.city}</span>

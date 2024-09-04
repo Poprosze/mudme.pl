@@ -31,9 +31,6 @@
   <div class="before-main-container">
     <div class="brand-heading">
       <span>{l s='Contact us' d='Shop.Theme.Catalog'}</span>
-      <svg>
-        <use xlink:href="#svg-icon-arrow"></use>
-      </svg>
     </div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360.3096859432302!2d16.974012485673256!3d52.904738589095466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47038ad7666d40a3%3A0xa6e68af1e030fa08!2sKaloszepoprosze!5e0!3m2!1sen!2spl!4v1653307760560!5m2!1sen!2spl" width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

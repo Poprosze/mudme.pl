@@ -27,9 +27,6 @@
         <div class="block-category">
             <div class="brand-heading">
                 <h1 class="h2">{$category.name}</h1>
-                <svg>
-                    <use xlink:href="#svg-icon-arrow"></use>
-                </svg>
             </div>
             <div class="block-category-inner">
                 {if $category.description}

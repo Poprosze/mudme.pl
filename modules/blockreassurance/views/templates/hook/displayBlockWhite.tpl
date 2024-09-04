@@ -29,9 +29,6 @@
     <div class="blockreassurance__heading col-sm-3">
         <div class="brand-heading">
             <span>{l s='What make us special?' d='Shop.Theme.Catalog'}</span>
-            <svg>
-                <use xlink:href="#svg-icon-arrow"></use>
-            </svg>
         </div>
 
     </div>
