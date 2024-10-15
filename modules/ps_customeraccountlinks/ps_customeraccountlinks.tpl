@@ -41,7 +41,12 @@
           </a>
         </li>
       {/foreach}
-    </ul>
+      <li class="links-list__elem">
+        <a class="links-list__link" href="{$urls.pages.contact}" title="{l s='Contact' d='Shop.Theme.Customeraccount'}" rel="nofollow">
+          {l s='Contact' d='Shop.Theme.Customeraccount'}
+        </a>
+      </li>
+  </ul>
   </div>
   <div class="d-block d-md-none mt-2">
     {hook h="displayMyAccountBlock"}
