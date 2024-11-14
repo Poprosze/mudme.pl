@@ -1016,3 +1016,53 @@ textarea.form-control {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
 }
+
+.links-shops{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+	margin-bottom: 40px;
+	.btn{
+		min-width: auto !important;
+		padding: 8px 14px !important;
+	}
+}
+
+.oddzial{
+	h2{
+		margin-bottom: 30px;
+		padding-bottom: 15px;
+		border-bottom: 1px dashed #c4c4c4;
+	}
+
+	> div{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		
+		@media (min-width: 768px) {
+			flex-direction: row;
+			gap: 40px;
+		}
+	
+		img {
+			height: fit-content;
+			flex-shrink: 0;
+		}
+	
+		ul{
+			list-style: none;
+			flex-grow: 1;
+			padding-left: 0;
+			display: grid;
+			gap: 30px;
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			margin-bottom: 40px;
+	
+			@media (min-width: 992px) {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
