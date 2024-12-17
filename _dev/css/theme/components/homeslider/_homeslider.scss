@@ -1,6 +1,10 @@
 
 .homeslider {
 
+  li{
+    position: relative !important;
+  }
+
   &__img {
     background: $gray-100;
   }
